@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Hospital | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0b1120; color: #eef2ff; line-height: 1.5; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 28px; border-radius: 44px; font-weight: 600; transition: 0.2s; text-decoration: none; border: none; cursor: pointer; }
+    .btn-primary { background: #2dd4bf; color: #0a0f1c; }
+    .btn-primary:hover { background: #14b8a6; transform: translateY(-2px); }
+    .navbar { background: #0f172ad9; backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1e2a3e; padding: 14px 0; }
+    .nav-flex { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo h2 { font-size: 1.8rem; font-weight: 800; background: linear-gradient(125deg, #a5f3fc, #2dd4bf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 500; color: #cbd5e6; transition: 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #2dd4bf; }
+    .mobile-menu { display: none; font-size: 1.6rem; cursor: pointer; color: #2dd4bf; }
+    .hero { padding: 80px 0; background: radial-gradient(ellipse at 30% 40%, #0e1a2a, #070c16); }
+    .hero-container { display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
+    .hero-left { flex: 1.2; }
+    .hero-badge { background: #1e2a3ecc; display: inline-block; padding: 6px 16px; border-radius: 40px; font-size: 0.75rem; color: #5eead4; margin-bottom: 24px; border-left: 3px solid #2dd4bf; }
+    .hero-left h1 { font-size: 3.4rem; font-weight: 800; line-height: 1.2; margin-bottom: 22px; }
+    .hero-left p { color: #a5b4cb; margin-bottom: 36px; }
+    .hero-right { flex: 0.9; background: #101a28; border-radius: 32px; padding: 20px; border: 1px solid #2d3a4e; text-align: center; }
+    .hero-right img { max-width: 100%; border-radius: 24px; }
+    .stats-row { background: #0a101f; padding: 48px 0; border-top: 1px solid #192233; border-bottom: 1px solid #192233; }
+    .stats-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 28px; text-align: center; }
+    .stat-block h3 { font-size: 2.4rem; color: #2dd4bf; }
+    .services-preview { padding: 80px 0; background: #0b1120; }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header h2 { font-size: 2.2rem; background: linear-gradient(135deg, #e2e8f0, #8ba3cb); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px; }
+    .service-item { background: #111827; padding: 32px 24px; border-radius: 32px; border: 1px solid #1f2a3e; text-align: center; transition: 0.25s; }
+    .service-item:hover { border-color: #2dd4bf; transform: translateY(-6px); }
+    .service-icon { font-size: 2.5rem; color: #2dd4bf; margin-bottom: 20px; }
+    .doctors { padding: 70px 0; background: #0e1625; }
+    .doctor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+    .doctor-card { background: #111b2a; border-radius: 28px; padding: 28px 20px; text-align: center; border: 1px solid #273142; }
+    .doctor-avatar { font-size: 3.6rem; color: #2dd4bf; }
+    footer { background: #050a14; padding: 52px 0 28px; }
+    .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; }
+    .footer-col h4 { color: #e0edfa; margin-bottom: 18px; }
+    .footer-col a, .footer-col p { display: block; color: #8aa1c0; text-decoration: none; margin-bottom: 10px; font-size: 0.85rem; }
+    .footer-col a:hover { color: #2dd4bf; }
+    .copyright { text-align: center; margin-top: 50px; padding-top: 24px; border-top: 1px solid #16212e; }
+    @media (max-width: 800px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: #0f172a; padding: 24px; border-radius: 32px; margin-top: 20px; }
+      .nav-links.active { display: flex; }
+      .mobile-menu { display: block; }
+      .hero-left h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container nav-flex">
+    <div class="logo"><h2>AETHERIS <span style="font-weight:400;">| medical</span></h2></div>
+    <div class="mobile-menu" id="mobileToggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="treatment.html">Treatments</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-left">
+        <div class="hero-badge"><i class="fas fa-moon"></i> 24/7 Critical Care</div>
+        <h1>Precision medicine, <br>human spirit.</h1>
+        <p>Cutting-edge diagnostics, deep empathy — Aetheris brings next-generation healthcare within your reach.</p>
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-week"></i> Book Appointment</a>
+      </div>
+      <div class="hero-right"><img src="https://placehold.co/500x400/132237/2dd4bf?text=🏥+Healing+Center" alt="Hospital"></div>
+    </div>
+  </section>
+  <div class="stats-row"><div class="container stats-grid">
+    <div class="stat-block"><h3>320+</h3><p>Expert Clinicians</p></div>
+    <div class="stat-block"><h3>68k+</h3><p>Yearly Patients</p></div>
+    <div class="stat-block"><h3>180+</h3><p>ICU Beds</p></div>
+    <div class="stat-block"><h3>99%</h3><p>Positive Outcomes</p></div>
+  </div></div>
+  <section class="services-preview"><div class="container">
+    <div class="section-header"><h2>Advanced clinical pillars</h2><p>Precision in every specialty</p></div>
+    <div class="services-grid">
+      <div class="service-item"><div class="service-icon"><i class="fas fa-heartbeat"></i></div><h3>Cardiac Sciences</h3><p>Robotic bypass & preventive cardiology</p></div>
+      <div class="service-item"><div class="service-icon"><i class="fas fa-brain"></i></div><h3>Neuro & Spine</h3><p>Minimally invasive brain surgery</p></div>
+      <div class="service-item"><div class="service-icon"><i class="fas fa-bone"></i></div><h3>Orthopedics</h3><p>Joint replacement & sports medicine</p></div>
+      <div class="service-item"><div class="service-icon"><i class="fas fa-radiation"></i></div><h3>Oncology</h3><p>Immunotherapy & precision oncology</p></div>
+    </div>
+  </div></section>
+  <section class="doctors"><div class="container">
+    <div class="section-header"><h2>Masters of medicine</h2><p>Internationally trained specialists</p></div>
+    <div class="doctor-grid">
+      <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h4>Dr. Isla Voss</h4><p>Chief, Cardiac Surgery</p></div>
+      <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h4>Dr. Mateo Reyes</h4><p>Head of Neurology</p></div>
+      <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h4>Dr. Zara Khan</h4><p>Oncology Director</p></div>
+      <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h4>Dr. James Chen</h4><p>Trauma & Acute Care</p></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="container footer-flex">
+  <div class="footer-col"><h4>AETHERIS HOSPITAL</h4><p>📍 77 Cyberpark, Zenith Avenue</p><p>📞 +1 (800) 892-4490</p></div>
+  <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="treatment.html">Treatments</a><a href="doctors.html">Doctors</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  <div class="footer-col"><h4>Connect</h4><a href="#"><i class="fab fa-twitter"></i> Twitter</a><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></div>
+</div><div class="container copyright"><p>© 2025 Aetheris Hospital</p></div></footer>
+<script>
+  const mobileBtn = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  if(mobileBtn) mobileBtn.onclick = () => navMenu.classList.toggle('active');
+  document.querySelectorAll('.nav-links a').forEach(link => link.onclick = () => navMenu.classList.remove('active'));
+</script>
+</body>
+</html>

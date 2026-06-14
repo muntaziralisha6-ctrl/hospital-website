@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Hospital | Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0b1120; color: #eef2ff; line-height: 1.5; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+    .btn-primary { background: #2dd4bf; color: #0a0f1c; padding: 12px 28px; border-radius: 44px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; border: none; cursor: pointer; }
+    .navbar { background: #0f172ad9; backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1e2a3e; padding: 14px 0; }
+    .nav-flex { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo h2 { font-size: 1.8rem; font-weight: 800; background: linear-gradient(125deg, #a5f3fc, #2dd4bf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 500; color: #cbd5e6; }
+    .nav-links a:hover, .nav-links a.active { color: #2dd4bf; }
+    .mobile-menu { display: none; font-size: 1.6rem; cursor: pointer; color: #2dd4bf; }
+    .page-header { padding: 60px 0 40px; background: radial-gradient(ellipse at 30% 40%, #0e1a2a, #070c16); text-align: center; }
+    .page-header h1 { font-size: 3rem; background: linear-gradient(135deg, #fff, #94a3f8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .contact-grid { display: flex; gap: 50px; flex-wrap: wrap; padding: 60px 0; }
+    .contact-info { flex: 1; background: #111827; padding: 32px; border-radius: 28px; border: 1px solid #1f2a3e; }
+    .contact-info i { width: 30px; color: #2dd4bf; }
+    .contact-info p { margin: 16px 0; }
+    .emergency-number { font-size: 2rem; font-weight: 800; color: #2dd4bf; margin: 20px 0; }
+    footer { background: #050a14; padding: 52px 0 28px; margin-top: 40px; }
+    .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; }
+    .footer-col a, .footer-col p { display: block; color: #8aa1c0; text-decoration: none; margin-bottom: 10px; font-size: 0.85rem; }
+    .copyright { text-align: center; margin-top: 50px; padding-top: 24px; border-top: 1px solid #16212e; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); align-items: center; justify-content: center; z-index: 1000; }
+    .modal-content { background: #101b28; max-width: 400px; padding: 34px; border-radius: 36px; text-align: center; border: 1px solid #2dd4bf; }
+    @media (max-width: 800px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: #0f172a; padding: 24px; border-radius: 32px; margin-top: 20px; }
+      .nav-links.active { display: flex; }
+      .mobile-menu { display: block; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar"><div class="container nav-flex"><div class="logo"><h2>AETHERIS <span style="font-weight:400;">| medical</span></h2></div>
+<div class="mobile-menu" id="mobileToggle"><i class="fas fa-bars"></i></div>
+<ul class="nav-links" id="navMenu"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="treatment.html">Treatments</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></div></nav>
+<section class="page-header"><div class="container"><h1>Contact Us</h1><p>We're here to help — 24/7 support available</p></div></section>
+<div class="container"><div class="contact-grid"><div class="contact-info"><h2>Get in touch</h2><p><i class="fas fa-map-marker-alt"></i> 77 Cyberpark, Zenith Avenue, Medical District</p><p><i class="fas fa-phone-alt"></i> +1 (800) 892-4490</p><p><i class="fas fa-envelope"></i> care@aetheris.health</p><p><i class="fas fa-clock"></i> Emergency: 24/7 | OPD: Mon-Sat 8am-8pm</p><div class="emergency-number"><i class="fas fa-ambulance"></i> +1 (800) 999-911</div><p>Ambulance service available within 10 minutes</p><button id="openModalBtn" class="btn-primary" style="margin-top: 20px;"><i class="fas fa-headset"></i> Request Callback</button></div><div class="contact-info"><h3>Departments</h3><p><strong>Appointments:</strong> appointments@aetheris.health</p><p><strong>Billing:</strong> billing@aetheris.health</p><p><strong>International Patients:</strong> international@aetheris.health</p><p><strong>HR & Careers:</strong> careers@aetheris.health</p></div></div></div>
+<footer><div class="container footer-flex"><div class="footer-col"><h4>AETHERIS HOSPITAL</h4><p>📍 77 Cyberpark, Zenith Avenue</p><p>📞 +1 (800) 892-4490</p></div><div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="treatment.html">Treatments</a><a href="doctors.html">Doctors</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div><div class="container copyright"><p>© 2025 Aetheris Hospital</p></div></footer>
+<div id="modal" class="modal"><div class="modal-content"><i class="fas fa-check-circle" style="font-size:3rem; color:#2dd4bf;"></i><h3 style="margin:16px 0">Request Received</h3><p>Our coordinator will contact you within 15 minutes.</p><button id="closeModal" style="margin-top:20px; background:#2dd4bf; color:#0a111f; padding:10px 28px; border-radius:60px; border:none; cursor:pointer;">Close</button></div></div>
+<script>
+  const m=document.getElementById('mobileToggle'),n=document.getElementById('navMenu');
+  if(m)m.onclick=()=>n.classList.toggle('active');
+  document.querySelectorAll('.nav-links a').forEach(l=>l.onclick=()=>n.classList.remove('active'));
+  const modal=document.getElementById('modal'),openBtn=document.getElementById('openModalBtn'),closeBtn=document.getElementById('closeModal');
+  if(openBtn)openBtn.onclick=()=>modal.style.display='flex';
+  if(closeBtn)closeBtn.onclick=()=>modal.style.display='none';
+  window.onclick=(e)=>{if(e.target===modal)modal.style.display='none';}
+</script>
+</body>
+</html>

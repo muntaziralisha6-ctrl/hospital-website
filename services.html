@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Hospital | Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0b1120; color: #eef2ff; line-height: 1.5; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+    .btn-primary { background: #2dd4bf; color: #0a0f1c; padding: 12px 28px; border-radius: 44px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; }
+    .navbar { background: #0f172ad9; backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1e2a3e; padding: 14px 0; }
+    .nav-flex { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo h2 { font-size: 1.8rem; font-weight: 800; background: linear-gradient(125deg, #a5f3fc, #2dd4bf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 500; color: #cbd5e6; }
+    .nav-links a:hover, .nav-links a.active { color: #2dd4bf; }
+    .mobile-menu { display: none; font-size: 1.6rem; cursor: pointer; color: #2dd4bf; }
+    .page-header { padding: 60px 0 40px; background: radial-gradient(ellipse at 30% 40%, #0e1a2a, #070c16); text-align: center; }
+    .page-header h1 { font-size: 3rem; background: linear-gradient(135deg, #fff, #94a3f8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 28px; padding: 60px 0; }
+    .service-card { background: #111827; border-radius: 28px; padding: 28px; border: 1px solid #1f2a3e; transition: 0.25s; display: flex; gap: 18px; }
+    .service-card:hover { border-color: #2dd4bf; transform: translateY(-4px); }
+    .service-icon { font-size: 2.2rem; color: #2dd4bf; }
+    .service-tag { background: #1e2a3e; padding: 4px 12px; border-radius: 40px; font-size: 0.7rem; display: inline-block; margin-top: 10px; }
+    footer { background: #050a14; padding: 52px 0 28px; margin-top: 40px; }
+    .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; }
+    .footer-col a, .footer-col p { display: block; color: #8aa1c0; text-decoration: none; margin-bottom: 10px; font-size: 0.85rem; }
+    .copyright { text-align: center; margin-top: 50px; padding-top: 24px; border-top: 1px solid #16212e; }
+    @media (max-width: 800px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: #0f172a; padding: 24px; border-radius: 32px; margin-top: 20px; }
+      .nav-links.active { display: flex; }
+      .mobile-menu { display: block; }
+      .service-card { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar"><div class="container nav-flex"><div class="logo"><h2>AETHERIS <span style="font-weight:400;">| medical</span></h2></div>
+<div class="mobile-menu" id="mobileToggle"><i class="fas fa-bars"></i></div>
+<ul class="nav-links" id="navMenu"><li><a href="index.html">Home</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="treatment.html">Treatments</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+<section class="page-header"><div class="container"><h1>Our Medical Services</h1><p>Comprehensive healthcare under one roof</p></div></section>
+<div class="container"><div class="services-grid">
+  <div class="service-card"><div class="service-icon"><i class="fas fa-heartbeat"></i></div><div><h3>Cardiology</h3><p>Advanced heart care, angioplasty, bypass surgery, and preventive cardiology.</p><span class="service-tag">24/7 Emergency</span></div></div>
+  <div class="service-card"><div class="service-icon"><i class="fas fa-brain"></i></div><div><h3>Neurology</h3><p>Stroke management, epilepsy surgery, deep brain stimulation.</p><span class="service-tag">Neuro ICU</span></div></div>
+  <div class="service-card"><div class="service-icon"><i class="fas fa-bone"></i></div><div><h3>Orthopedics</h3><p>Joint replacement, sports medicine, arthroscopy, spine surgery.</p><span class="service-tag">Robotic surgery</span></div></div>
+  <div class="service-card"><div class="service-icon"><i class="fas fa-radiation"></i></div><div><h3>Oncology</h3><p>Immunotherapy, radiation oncology, chemotherapy, bone marrow transplant.</p><span class="service-tag">Precision medicine</span></div></div>
+  <div class="service-card"><div class="service-icon"><i class="fas fa-fetus"></i></div><div><h3>Maternity & NICU</h3><p>High-risk pregnancy, fertility services, Level IV neonatal intensive care.</p><span class="service-tag">24/7 Labor & Delivery</span></div></div>
+  <div class="service-card"><div class="service-icon"><i class="fas fa-lungs"></i></div><div><h3>Pulmonology</h3><p>Respiratory care, sleep clinic, lung cancer screening, asthma management.</p><span class="service-tag">Bronchoscopy Suite</span></div></div>
+</div></div>
+<footer><div class="container footer-flex"><div class="footer-col"><h4>AETHERIS HOSPITAL</h4><p>📍 77 Cyberpark, Zenith Avenue</p><p>📞 +1 (800) 892-4490</p></div><div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="treatment.html">Treatments</a><a href="doctors.html">Doctors</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div><div class="container copyright"><p>© 2025 Aetheris Hospital</p></div></footer>
+<script>const m=document.getElementById('mobileToggle'),n=document.getElementById('navMenu');if(m)m.onclick=()=>n.classList.toggle('active');document.querySelectorAll('.nav-links a').forEach(l=>l.onclick=()=>n.classList.remove('active'));</script>
+</body>
+</html>

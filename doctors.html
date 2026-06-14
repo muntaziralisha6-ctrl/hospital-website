@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Hospital | Our Doctors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0b1120; color: #eef2ff; line-height: 1.5; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+    .navbar { background: #0f172ad9; backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1e2a3e; padding: 14px 0; }
+    .nav-flex { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .logo h2 { font-size: 1.8rem; font-weight: 800; background: linear-gradient(125deg, #a5f3fc, #2dd4bf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 500; color: #cbd5e6; }
+    .nav-links a:hover, .nav-links a.active { color: #2dd4bf; }
+    .mobile-menu { display: none; font-size: 1.6rem; cursor: pointer; color: #2dd4bf; }
+    .page-header { padding: 60px 0 40px; background: radial-gradient(ellipse at 30% 40%, #0e1a2a, #070c16); text-align: center; }
+    .page-header h1 { font-size: 3rem; background: linear-gradient(135deg, #fff, #94a3f8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .doctor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 32px; padding: 60px 0; }
+    .doctor-card { background: #111827; border-radius: 28px; padding: 32px; text-align: center; border: 1px solid #1f2a3e; transition: 0.25s; }
+    .doctor-card:hover { border-color: #2dd4bf; transform: translateY(-6px); }
+    .doctor-avatar { font-size: 4rem; color: #2dd4bf; margin-bottom: 16px; }
+    .doctor-specialty { color: #2dd4bf; font-weight: 600; margin: 8px 0; }
+    footer { background: #050a14; padding: 52px 0 28px; margin-top: 40px; }
+    .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px; }
+    .footer-col a, .footer-col p { display: block; color: #8aa1c0; text-decoration: none; margin-bottom: 10px; font-size: 0.85rem; }
+    .copyright { text-align: center; margin-top: 50px; padding-top: 24px; border-top: 1px solid #16212e; }
+    @media (max-width: 800px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: #0f172a; padding: 24px; border-radius: 32px; margin-top: 20px; }
+      .nav-links.active { display: flex; }
+      .mobile-menu { display: block; }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar"><div class="container nav-flex"><div class="logo"><h2>AETHERIS <span style="font-weight:400;">| medical</span></h2></div>
+<div class="mobile-menu" id="mobileToggle"><i class="fas fa-bars"></i></div>
+<ul class="nav-links" id="navMenu"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="treatment.html">Treatments</a></li><li><a href="doctors.html" class="active">Doctors</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+<section class="page-header"><div class="container"><h1>Our Expert Physicians</h1><p>World-class specialists dedicated to your health</p></div></section>
+<div class="container"><div class="doctor-grid">
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. Isla Voss</h3><div class="doctor-specialty">Chief of Cardiology</div><p>25+ years experience | Robotic bypass specialist</p></div>
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. Mateo Reyes</h3><div class="doctor-specialty">Head of Neurology</div><p>Stroke & Deep Brain Stimulation expert</p></div>
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. Zara Khan</h3><div class="doctor-specialty">Oncology Director</div><p>Immunotherapy & Precision Oncology</p></div>
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. James Chen</h3><div class="doctor-specialty">Emergency Medicine Chief</div><p>Trauma surgery & Critical care</p></div>
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. Vikram Mehta</h3><div class="doctor-specialty">Orthopedic Surgeon</div><p>Joint replacement & Robotic surgery</p></div>
+  <div class="doctor-card"><div class="doctor-avatar"><i class="fas fa-user-md"></i></div><h3>Dr. Elena Petrov</h3><div class="doctor-specialty">Neurologist</div><p>Epilepsy & Neuroimaging specialist</p></div>
+</div></div>
+<footer><div class="container footer-flex"><div class="footer-col"><h4>AETHERIS HOSPITAL</h4><p>📍 77 Cyberpark, Zenith Avenue</p><p>📞 +1 (800) 892-4490</p></div><div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="treatment.html">Treatments</a><a href="doctors.html">Doctors</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div><div class="container copyright"><p>© 2025 Aetheris Hospital</p></div></footer>
+<script>const m=document.getElementById('mobileToggle'),n=document.getElementById('navMenu');if(m)m.onclick=()=>n.classList.toggle('active');document.querySelectorAll('.nav-links a').forEach(l=>l.onclick=()=>n.classList.remove('active'));</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Treatments · Aetheris Hospital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="emergency-bar">
+  <div class="container">
+    <div class="left">24/7 Emergency: <strong>+1 (800) 999-911</strong></div>
+    <div class="right">
+      <span>10-min response</span>
+      <span>300+ specialists</span>
+    </div>
+  </div>
+</div>
+
+<header id="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">A</div>
+        <div class="logo-text">
+          <span class="logo-name">AETHERIS</span>
+          <span class="logo-sub">HOSPITAL</span>
+        </div>
+      </a>
+      <button class="mobile-menu-btn">☰</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html" class="active">Treatments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary"><span>Book Appointment</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Advanced Procedures</span>
+    <h1>Advanced Treatments</h1>
+    <p>Cutting-edge procedures with proven outcomes — delivered by world-class specialists.</p>
+  </div>
+</section>
+
+<section class="filter-bar">
+  <div class="container">
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all">All Treatments</button>
+      <button class="filter-pill" data-filter="cardiology">Cardiology</button>
+      <button class="filter-pill" data-filter="neurology">Neurology</button>
+      <button class="filter-pill" data-filter="orthopedics">Orthopedics</button>
+      <button class="filter-pill" data-filter="oncology">Oncology</button>
+      <button class="filter-pill" data-filter="nephrology">Nephrology</button>
+    </div>
+    <div class="results-count">Showing <strong id="visibleCount">13</strong> treatments</div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="treatments-grid stagger" id="treatmentsGrid">
+
+      <div class="treatment-card" data-category="cardiology">
+        <div class="card-top">
+          <div class="marker">C</div>
+          <span class="success-badge">98.6% success</span>
+        </div>
+        <h3>Robotic Bypass Surgery</h3>
+        <span class="spec-tag">Cardiology</span>
+        <p>Minimally invasive coronary artery bypass with robotic assistance — smaller incisions, faster recovery, and less pain.</p>
+        <div class="treatment-tags"><span>Faster recovery</span><span>48-hour discharge</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="neurology">
+        <div class="card-top">
+          <div class="marker">N</div>
+          <span class="success-badge">Adjustable</span>
+        </div>
+        <h3>Deep Brain Stimulation</h3>
+        <span class="spec-tag">Neurology</span>
+        <p>Advanced treatment for Parkinson's disease and essential tremor — programmable, adjustable, and highly effective.</p>
+        <div class="treatment-tags"><span>Movement disorders</span><span>Programmable</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="orthopedics">
+        <div class="card-top">
+          <div class="marker">O</div>
+          <span class="success-badge">99% accuracy</span>
+        </div>
+        <h3>Robotic Joint Replacement</h3>
+        <span class="spec-tag">Orthopedics</span>
+        <p>MAKO robotic-arm assisted knee and hip replacement — 99% implant accuracy, less pain, and same-day walking.</p>
+        <div class="treatment-tags"><span>Same-day walking</span><span>Precision fit</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="oncology">
+        <div class="card-top">
+          <div class="marker">On</div>
+          <span class="success-badge">Breakthrough</span>
+        </div>
+        <h3>Immunotherapy</h3>
+        <span class="spec-tag">Oncology</span>
+        <p>Revolutionary cancer treatment using your body's own immune system — dramatically improving outcomes for many cancers.</p>
+        <div class="treatment-tags"><span>Lung cancer</span><span>Breast cancer</span><span>Melanoma</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="oncology">
+        <div class="card-top">
+          <div class="marker">Pb</div>
+          <span class="success-badge">Precision</span>
+        </div>
+        <h3>Proton Beam Therapy</h3>
+        <span class="spec-tag">Oncology</span>
+        <p>Highly targeted radiation that destroys tumors while sparing healthy tissue — ideal for pediatric and brain tumors.</p>
+        <div class="treatment-tags"><span>Pediatric cancer</span><span>Brain tumors</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="neurology">
+        <div class="card-top">
+          <div class="marker">St</div>
+          <span class="success-badge">24/7 team</span>
+        </div>
+        <h3>Stroke Thrombectomy</h3>
+        <span class="spec-tag">Neurology</span>
+        <p>Mechanical clot removal for acute ischemic stroke — performed within the golden hour to save brain function.</p>
+        <div class="treatment-tags"><span>Golden hour</span><span>24/7 stroke team</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="cardiology">
+        <div class="card-top">
+          <div class="marker">Tv</div>
+          <span class="success-badge">Non-invasive</span>
+        </div>
+        <h3>TAVR / TAVI</h3>
+        <span class="spec-tag">Cardiology</span>
+        <p>Transcatheter aortic valve replacement — a non-surgical option for patients with severe aortic stenosis.</p>
+        <div class="treatment-tags"><span>Catheter-based</span><span>Faster recovery</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="cardiology">
+        <div class="card-top">
+          <div class="marker">An</div>
+          <span class="success-badge">Same-day</span>
+        </div>
+        <h3>Angioplasty & Stenting</h3>
+        <span class="spec-tag">Cardiology</span>
+        <p>Same-day catheter-based procedure to open blocked arteries — usually performed through a small wrist incision.</p>
+        <div class="treatment-tags"><span>Same-day</span><span>Minimally invasive</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="orthopedics">
+        <div class="card-top">
+          <div class="marker">Ac</div>
+          <span class="success-badge">Athlete care</span>
+        </div>
+        <h3>ACL Reconstruction</h3>
+        <span class="spec-tag">Orthopedics</span>
+        <p>Arthroscopic reconstruction of the anterior cruciate ligament for athletes and active individuals.</p>
+        <div class="treatment-tags"><span>Arthroscopic</span><span>Sports injury</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="orthopedics">
+        <div class="card-top">
+          <div class="marker">Sp</div>
+          <span class="success-badge">Mini-invasive</span>
+        </div>
+        <h3>Spine Fusion & Disc Replacement</h3>
+        <span class="spec-tag">Orthopedics</span>
+        <p>Minimally invasive spine surgery for herniated discs, spinal stenosis, and degenerative conditions.</p>
+        <div class="treatment-tags"><span>Minimally invasive</span><span>Faster recovery</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="neurology">
+        <div class="card-top">
+          <div class="marker">Ab</div>
+          <span class="success-badge">Awake</span>
+        </div>
+        <h3>Awake Brain Surgery</h3>
+        <span class="spec-tag">Neurology</span>
+        <p>Brain tumor removal while the patient is awake — allowing surgeons to protect critical speech and motor areas.</p>
+        <div class="treatment-tags"><span>Patient responsive</span><span>Precision mapping</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="oncology">
+        <div class="card-top">
+          <div class="marker">Tc</div>
+          <span class="success-badge">Personalized</span>
+        </div>
+        <h3>Targeted Cancer Therapy</h3>
+        <span class="spec-tag">Oncology</span>
+        <p>Genomic-driven treatment that targets specific cancer mutations — precision medicine tailored to your tumor.</p>
+        <div class="treatment-tags"><span>Genomic testing</span><span>Precision medicine</span></div>
+      </div>
+
+      <div class="treatment-card" data-category="nephrology">
+        <div class="card-top">
+          <div class="marker">Kt</div>
+          <span class="success-badge">180+ / year</span>
+        </div>
+        <h3>Kidney Transplant</h3>
+        <span class="spec-tag">Nephrology</span>
+        <p>Living and deceased donor kidney transplant program with exceptional success rates and comprehensive post-transplant care.</p>
+        <div class="treatment-tags"><span>Living donor</span><span>Deceased donor</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Departments</h3>
+        <ul>
+          <li><a href="services.html?id=cardiology">Cardiology</a></li>
+          <li><a href="services.html?id=neurology">Neurology</a></li>
+          <li><a href="services.html?id=orthopedics">Orthopedics</a></li>
+          <li><a href="services.html?id=oncology">Oncology</a></li>
+          <li><a href="services.html?id=maternity">Maternity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Get in Touch</h3>
+        <p>77 Cyberpark, Zenith Avenue</p>
+        <p>+1 (800) 892-4490</p>
+        <p>care@aetheris.health</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+});
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.getElementById('nav');
+mobileMenuBtn.addEventListener('click', function () {
+  nav.classList.toggle('active');
+  this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+});
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+    mobileMenuBtn.textContent = '☰';
+  });
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal, .stagger, .section-title').forEach(el => observer.observe(el));
+
+/* Filter functionality */
+const pills = document.querySelectorAll('.filter-pill');
+const cards = document.querySelectorAll('.treatment-card');
+const visibleCount = document.getElementById('visibleCount');
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    let count = 0;
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'flex';
+        count++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    visibleCount.textContent = count;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aetheris Hospital · Our Doctors</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="emergency-bar">
+  <div class="container">
+    <div class="left">24/7 Emergency: <strong>+1 (800) 999-911</strong></div>
+    <div class="right">
+      <span>10-min response</span>
+      <span>300+ specialists</span>
+    </div>
+  </div>
+</div>
+
+<header id="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">A</div>
+        <div class="logo-text">
+          <span class="logo-name">AETHERIS</span>
+          <span class="logo-sub">HOSPITAL</span>
+        </div>
+      </a>
+      <button class="mobile-menu-btn">☰</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="doctors.html" class="active">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary"><span>Book Appointment</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">World-Class Experts</span>
+    <h1>Masters of Medicine</h1>
+    <p>Internationally trained specialists dedicated to your health and recovery.</p>
+  </div>
+</section>
+
+<section class="filter-bar">
+  <div class="container">
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all">All Doctors</button>
+      <button class="filter-pill" data-filter="cardiology">Cardiology</button>
+      <button class="filter-pill" data-filter="neurology">Neurology</button>
+      <button class="filter-pill" data-filter="orthopedics">Orthopedics</button>
+      <button class="filter-pill" data-filter="oncology">Oncology</button>
+      <button class="filter-pill" data-filter="emergency">Emergency</button>
+    </div>
+    <div class="results-count">Showing <strong id="visibleCount">8</strong> doctors</div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="doctors-grid stagger" id="doctorsGrid">
+
+      <div class="doctor-card" data-category="cardiology">
+        <div class="doctor-avatar">IV</div>
+        <h4>Dr. Isla Voss</h4>
+        <div class="spec">Chief of Cardiology</div>
+        <div class="exp">Robotic bypass specialist with 25+ years in cardiac surgery.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">25+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.9</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="neurology">
+        <div class="doctor-avatar">MR</div>
+        <h4>Dr. Mateo Reyes</h4>
+        <div class="spec">Head of Neurology</div>
+        <div class="exp">Stroke & DBS expert — published in 40+ international journals.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">20+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.9</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="oncology">
+        <div class="doctor-avatar">ZK</div>
+        <h4>Dr. Zara Khan</h4>
+        <div class="spec">Oncology Director</div>
+        <div class="exp">Immunotherapy pioneer & precision oncology specialist.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">18+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.9</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="emergency">
+        <div class="doctor-avatar">JC</div>
+        <h4>Dr. James Chen</h4>
+        <div class="spec">Emergency Medicine Chief</div>
+        <div class="exp">Trauma surgery & critical care specialist available 24/7.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">22+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">5.0</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="orthopedics">
+        <div class="doctor-avatar">SK</div>
+        <h4>Dr. Saad Ali Khan</h4>
+        <div class="spec">Chief of Orthopedics</div>
+        <div class="exp">Robotic joint replacement & sports medicine expert.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">20+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.8</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="neurology">
+        <div class="doctor-avatar">EP</div>
+        <h4>Dr. Elena Petrov</h4>
+        <div class="spec">Senior Neurologist</div>
+        <div class="exp">Epilepsy & neuroimaging specialist — 15+ years of practice.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">15+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.9</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="cardiology">
+        <div class="doctor-avatar">MS</div>
+        <h4>Dr. Marco Salvi</h4>
+        <div class="spec">Interventional Cardiologist</div>
+        <div class="exp">TAVR / TAVI specialist with 12+ years in catheter interventions.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">12+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.8</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-category="orthopedics">
+        <div class="doctor-avatar">LC</div>
+        <h4>Dr. Laura Costa</h4>
+        <div class="spec">Sports Medicine Specialist</div>
+        <div class="exp">Team physician for professional athletes — ACL & shoulder expert.</div>
+        <div class="stats-mini">
+          <div class="item"><span class="num">14+</span><span class="lbl">Years</span></div>
+          <div class="item"><span class="num">4.9</span><span class="lbl">Rating</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Want to Consult a Specialist?</h2>
+    <p>Reach out to our team — we'll help you get in touch with the right expert.</p>
+    <a href="contact.html" class="btn"><span>Contact Us</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Departments</h3>
+        <ul>
+          <li><a href="services.html?id=cardiology">Cardiology</a></li>
+          <li><a href="services.html?id=neurology">Neurology</a></li>
+          <li><a href="services.html?id=orthopedics">Orthopedics</a></li>
+          <li><a href="services.html?id=oncology">Oncology</a></li>
+          <li><a href="services.html?id=maternity">Maternity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Get in Touch</h3>
+        <p>77 Cyberpark, Zenith Avenue</p>
+        <p>+1 (800) 892-4490</p>
+        <p>care@aetheris.health</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+});
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.getElementById('nav');
+mobileMenuBtn.addEventListener('click', function () {
+  nav.classList.toggle('active');
+  this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+});
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+    mobileMenuBtn.textContent = '☰';
+  });
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal, .stagger, .section-title').forEach(el => observer.observe(el));
+
+/* Filter */
+const pills = document.querySelectorAll('.filter-pill');
+const cards = document.querySelectorAll('.doctor-card');
+const visibleCount = document.getElementById('visibleCount');
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    let count = 0;
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'flex';
+        count++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    visibleCount.textContent = count;
+  });
+});
+</script>
+</body>
+</html>

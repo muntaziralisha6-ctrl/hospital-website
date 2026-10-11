@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact · Aetheris Hospital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- EMERGENCY BAR -->
+<div class="emergency-bar">
+  <div class="container">
+    <div class="left">24/7 Emergency: <strong>+1 (800) 999-911</strong></div>
+    <div class="right">
+      <span>10-min response</span>
+      <span>300+ specialists</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">A</div>
+        <div class="logo-text">
+          <span class="logo-name">AETHERIS</span>
+          <span class="logo-sub">HOSPITAL</span>
+        </div>
+      </a>
+      <button class="mobile-menu-btn">☰</button>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary"><span>Book Appointment</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">24/7 Support</span>
+    <h1>Contact Aetheris Hospital</h1>
+    <p>We're here for you — whether it's an emergency, a question, or a booking.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-padding">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info slide-left">
+        <h2>Let's Talk</h2>
+        <p>Have questions about your next step? Our team is here to help you plan the right care.</p>
+
+        <div class="business-hours slide-right">
+          <h3>Business Hours</h3>
+          <div class="hour-row"><span class="day">Monday - Friday</span><span>8:00 AM - 8:00 PM</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span>9:00 AM - 5:00 PM</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span>Emergency Only</span></div>
+          <div class="hour-row"><span class="day">Emergency</span><span>24 / 7 / 365</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-form slide-right">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below — our team will respond within 2 hours during OPD hours.</p>
+
+        <div class="success-message" id="formSuccess">Thank you! We'll get back to you shortly.</div>
+
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value="">Select a department</option>
+              <option>General Inquiry</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Orthopedics</option>
+              <option>Oncology</option>
+              <option>Maternity & NICU</option>
+              <option>Pulmonology</option>
+              <option>Nephrology</option>
+              <option>Dental Sciences</option>
+              <option>Emergency</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Brief subject of your inquiry" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary"><span>Send Message</span></button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers to common questions about contacting and visiting Aetheris.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item open">
+        <div class="faq-q">How do I reach an appointment?</div>
+        <div class="faq-a">You can reach out through our contact page, call +1 (800) 892-4490, or use our mobile app. Same-day appointments are available for urgent cases.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What insurance plans do you accept?</div>
+        <div class="faq-a">We accept all major insurance providers including Aetna, Blue Cross, Cigna, United Health, and many international plans. Contact our billing team for specifics.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you offer telemedicine consultations?</div>
+        <div class="faq-a">Yes. We offer virtual consultations for follow-ups, second opinions, and non-emergency inquiries. Reach out through our website or app.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I get my medical records?</div>
+        <div class="faq-a">Request your records through our patient portal or email records@aetheris.health. Records are typically ready within 3 business days.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is parking available at the hospital?</div>
+        <div class="faq-a">Yes — we have 500+ free parking spaces including dedicated accessible parking near each entrance. Valet service is available at the main entrance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+  <div class="container">
+    <div class="section-title reveal">
+      <h2>Find Us</h2>
+      <p>Visit our hospital or connect with us online</p>
+    </div>
+    <div class="map-container scale-in">
+      <div class="map-content">
+        <div class="marker">A</div>
+        <h3>Aetheris Hospital HQ</h3>
+        <p>77 Cyberpark, Zenith Avenue, Medical District</p>
+        <a href="#" class="btn btn-primary"><span>Get Directions</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Reach Out?</h2>
+    <p>Our team is available 24/7 to assist with questions, appointments, and emergencies.</p>
+    <a href="contact.html" class="btn"><span>Contact Us</span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Departments</h3>
+        <ul>
+          <li><a href="services.html?id=cardiology">Cardiology</a></li>
+          <li><a href="services.html?id=neurology">Neurology</a></li>
+          <li><a href="services.html?id=orthopedics">Orthopedics</a></li>
+          <li><a href="services.html?id=oncology">Oncology</a></li>
+          <li><a href="services.html?id=maternity">Maternity</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Get in Touch</h3>
+        <p>77 Cyberpark, Zenith Avenue</p>
+        <p>+1 (800) 892-4490</p>
+        <p>care@aetheris.health</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+});
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.getElementById('nav');
+mobileMenuBtn.addEventListener('click', function () {
+  nav.classList.toggle('active');
+  this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+});
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+    mobileMenuBtn.textContent = '☰';
+  });
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal, .slide-left, .slide-right, .scale-in, .stagger, .section-title').forEach(el => observer.observe(el));
+
+/* FAQ accordion */
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    document.querySelectorAll('.faq-item').forEach(other => {
+      if (other !== item) other.classList.remove('open');
+    });
+    item.classList.toggle('open');
+  });
+});
+
+/* Contact form */
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  formSuccess.classList.add('show');
+  contactForm.reset();
+  setTimeout(() => formSuccess.classList.remove('show'), 5000);
+});
+</script>
+</body>
+</html>
